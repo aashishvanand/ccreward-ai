@@ -1,0 +1,36 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ccreward",
+  "version": "1.0.0",
+  "description": "Calculate exact credit card rewards for every transaction in India and Singapore: points, miles or cashback for your card, spend amount and merchant. Powered by ccreward.app.",
+  "author": {
+    "name": "Aashish Vivekanand",
+    "url": "https://ccreward.app"
+  },
+  "homepage": "https://ccreward.app/mcp",
+  "keywords": ["credit card", "rewards", "cashback", "miles", "points", "mcc", "india", "singapore"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "ccreward",
+        "shortDescription": "Credit card rewards calculator for India and Singapore",
+        "longDescription": "Find out how many points, miles or cashback you earn on any transaction with Indian 🇮🇳 and Singapore 🇸🇬 credit cards. Look up cards, merchant category codes (MCCs) and airline/hotel transfer partners without signing in. Connect your free ccreward account to calculate rewards, compare your cards for a purchase, plan point transfers and use the cards saved in the ccreward app.",
+        "developerName": "Aashish Vivekanand",
+        "category": "Finance",
+        "capabilities": ["Read", "Write"],
+        "websiteURL": "https://ccreward.app",
+        "privacyPolicyURL": "https://ccreward.app/privacy",
+        "termsOfServiceURL": "https://ccreward.app/terms",
+        "defaultPrompt": [
+          "How many points do I earn for ₹5,000 spent on Singapore Airlines using my Axis Atlas card?",
+          "Calculate rewards for spending ₹1,000 on my HDFC Swiggy BLCK card.",
+          "What's the MCC for Swiggy?",
+          "How many miles for S$200 on UOB PRVI Miles at a Marriott hotel in Singapore?"
+        ],
+        "brandColor": "#1067AE",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}

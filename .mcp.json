@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "ccreward": {
+      "type": "http",
+      "url": "https://api.ccreward.app/mcp"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "ccreward",
+  "displayName": "ccreward",
+  "version": "1.0.0",
+  "description": "Calculate exact credit card rewards for every transaction in India and Singapore: points, miles or cashback for your card, spend amount and merchant. Look up cards, merchant MCCs and airline/hotel transfer partners. Powered by ccreward.app.",
+  "author": {
+    "name": "Aashish Vivekanand",
+    "url": "https://ccreward.app"
+  },
+  "homepage": "https://ccreward.app/mcp",
+  "repository": "https://github.com/aashishvanand/ccreward-ai",
+  "license": "MIT",
+  "keywords": ["credit card", "rewards", "cashback", "miles", "points", "mcc", "india", "singapore", "finance"],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://ccreward.app/mcp",
+  "supportUrl": "https://ccreward.app",
+  "privacyPolicyUrl": "https://ccreward.app/privacy",
+  "termsOfServiceUrl": "https://ccreward.app/terms"
+}

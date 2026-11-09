@@ -1,0 +1,15 @@
+{
+  "name": "ccreward-marketplace",
+  "description": "Official ccreward.app plugins for Claude",
+  "owner": {
+    "name": "Aashish Vivekanand",
+    "url": "https://ccreward.app"
+  },
+  "plugins": [
+    {
+      "name": "ccreward",
+      "source": "./",
+      "description": "Credit card rewards calculator for India and Singapore"
+    }
+  ]
+}
