@@ -34,13 +34,13 @@ This repository packages ccreward for **Claude** (claude.ai, Cowork, Claude Code
 
 ## Account and authentication
 
-The MCP server uses OAuth 2.1 (dynamic client registration with PKCE). The first time you use a ccreward tool you'll be asked to sign in with your free ccreward account. In Claude Code, run `/mcp`, select **ccreward** and choose **Authenticate**. No API key is stored in this repository.
+The MCP server uses OAuth 2.1 (dynamic client registration with PKCE). The first time you use a ccreward tool you'll be asked to sign in with your ccreward account. In Claude Code, run `/mcp`, select **ccreward** and choose **Authenticate**. No API key is stored in this repository.
 
 ## Data and privacy
 
 When you use ccreward, your assistant sends the details needed to answer your question — card names, spend amounts, currency, merchant names or MCCs, and your answers to card questions — to the ccreward API at `api.ccreward.app`. Portfolio tools read and change the cards saved in your ccreward account. Feedback you choose to submit is sent to ccreward. Nothing is sent anywhere else, and the plugin runs no local code, scripts or hooks. See the [privacy policy](https://ccreward.app/privacy) and [terms](https://ccreward.app/terms).
 
-Calculations use credits on your ccreward account; get more at https://ccreward.app/mcp/credits.
+Calculations use credits on your ccreward account. Credits keep the service fair and protect it from automated abuse; see https://ccreward.app/mcp for how they work.
 
 ccreward calculates rewards for cards you already hold. It does not recommend cards to apply for or give financial advice.
 

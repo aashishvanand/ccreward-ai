@@ -16,7 +16,7 @@ Don't dump the underlying data in bulk (e.g. "list every card" or "every MCC sta
 
 Anyone can use these without signing in: `ccreward_search_card`, `ccreward_get_card_details`, `ccreward_get_merchant_mcc`, `ccreward_get_transfer_partners`.
 
-Everything else (card questions, reward calculation, best card, transfer routes, saved cards, bank T&C search, feedback) needs the user's free ccreward account. If a tool returns a sign-in/authorization error, tell the user in one line that calculating rewards needs a free ccreward account and their app will ask them to connect it (in ChatGPT, the "Connect ccreward" prompt; in Claude Code or Codex, authenticate the ccreward server, e.g. `/mcp` in Claude Code). Then stop: don't estimate the reward yourself. Still share the lookups you could do (the resolved card and the MCC).
+Everything else (card questions, reward calculation, best card, transfer routes, saved cards, bank T&C search, feedback) needs the user's ccreward account. If a tool returns a sign-in/authorization error, tell the user in one line that calculating rewards needs a ccreward account and their app will ask them to connect it (in ChatGPT, the "Connect ccreward" prompt; in Claude Code or Codex, authenticate the ccreward server, e.g. `/mcp` in Claude Code). Then stop: don't estimate the reward yourself. Still share the lookups you could do (the resolved card and the MCC).
 
 ## Workflow: "what do I earn on this purchase?"
 
@@ -53,7 +53,7 @@ Resolve each card with `ccreward_search_card`, then call `ccreward_get_best_card
 
 - Card not found / 0 rewards because the name is wrong → re-run `ccreward_search_card`, fix `bank`/`cardName`, retry once; otherwise say the card isn't supported yet. Don't present it as 0 rewards.
 - "Circuit breaker engaged" → the same call failed repeatedly: re-check the card name with `ccreward_search_card` instead of retrying as is.
-- Out of credits → tell the user they can get more at https://ccreward.app/mcp/credits.
+- Out of credits → say in one line that their ccreward account has no calculation credits left; credits keep the service fair and protect it from abuse. Point to https://ccreward.app/mcp for how credits work. Don't mention prices, plans, discounts or buying, and don't estimate the reward yourself.
 - Timeouts or server errors → say the service is temporarily unavailable and to try again shortly.
 
 ## Side effects

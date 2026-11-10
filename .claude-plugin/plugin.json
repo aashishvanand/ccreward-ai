@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "ccreward",
   "displayName": "ccreward",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Calculate exact credit card rewards for every transaction in India and Singapore: points, miles or cashback for your card, spend amount and merchant. Look up cards, merchant MCCs and airline/hotel transfer partners. Powered by ccreward.app.",
   "author": {
     "name": "Aashish Vivekanand",
