@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.aashishvanand/ccreward",
+  "title": "ccreward",
+  "description": "Credit card rewards for India and Singapore: points, miles or cashback per card, spend and merchant.",
+  "version": "1.0.1",
+  "websiteUrl": "https://ccreward.app/mcp",
+  "icons": [
+    { "src": "https://ccreward.app/android-chrome-512x512.png", "mimeType": "image/png", "sizes": ["512x512"] }
+  ],
+  "repository": {
+    "url": "https://github.com/aashishvanand/ccreward-ai",
+    "source": "github"
+  },
+  "remotes": [
+    { "type": "streamable-http", "url": "https://api.ccreward.app/mcp" }
+  ]
+}
