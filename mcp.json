@@ -9,8 +9,7 @@
           "auth": {
             "type": "mixed",
             "client": {
-              "mode": "dcr",
-              "tokenEndpointAuthMethod": "none"
+              "mode": "dcr"
             },
             "baseScopes": ["mcp"]
           }

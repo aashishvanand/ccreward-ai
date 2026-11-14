@@ -3,7 +3,7 @@
   "name": "io.github.aashishvanand/ccreward",
   "title": "ccreward",
   "description": "Credit card rewards for India and Singapore: points, miles or cashback per card, spend and merchant.",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "websiteUrl": "https://ccreward.app/mcp",
   "icons": [
     { "src": "https://ccreward.app/android-chrome-512x512.png", "mimeType": "image/png", "sizes": ["512x512"] }

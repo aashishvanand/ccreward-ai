@@ -7,3 +7,7 @@ dist/
 # Private: kept locally, not published
 custom-gpt/
 RELEASING.md
+# Local tool state
+.cloudflare/
+.codex/
+.DS_Store
